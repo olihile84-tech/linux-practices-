@@ -1,0 +1,96 @@
+Linux + Git Cheat Sheet
+Quick reference guide for essential terminal commands and Git workflows
+
+FILE BASICS
+mkdir foldername
+
+# make a folder
+
+cd foldername
+
+# move into it
+
+cd
+
+# jump home from anywhere
+
+cd ..
+
+# go up one folder
+
+touch file.txt
+
+# create empty file
+
+echo "text" > file.txt
+
+# write text into file
+
+cat file.txt
+
+# view file contents
+
+cp file.txt copy.txt
+
+# copy a file
+
+mv old.txt new.txt
+
+# rename/move a file
+
+rm -i file.txt
+
+# delete a file (asks to confirm)
+
+ls
+
+# list what's in the folder
+
+GIT - GETTING SET UP
+git init
+
+# turn folder into a git repo
+
+git add .
+
+# stage all changed files
+
+git commit -m "message"
+
+# save a snapshot
+
+git remote add origin <URL>
+
+# connect to GitHub
+
+git push -u origin master
+
+# send local code to GitHub (first time)
+
+git push
+
+# send updates (after first time)
+
+GIT - GETTING UPDATES
+git pull origin master --no-rebase
+
+# bring GitHub's changes down + merge
+
+MERGE CONFLICTS
+1. cat README.md (or nano README.md ) to see the conflict
+2. Look for <<<<<<< HEAD / ======= / >>>>>>>
+3. Delete markers + version you don't want
+4. Save ( Ctrl+O , Enter ) and exit ( Ctrl+X ) in nano
+5. git add . / git commit -m "resolved conflict" / git push
+
+AUTH (ONCE PER MACHINE)
+gh auth login
+
+# log in via browser, no password typing
+
+REMINDERS
+• push = local to GitHub. clone/pull = GitHub to local
+• New terminal tab = back at home, cd first
+• nano: Ctrl+O saves, Ctrl+X exits
+
+
