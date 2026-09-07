@@ -1,0 +1,2 @@
+you need to add a new branch connected to test branch and another connected to master branch then
+merge them to the main branches they should only be connected to their branches master and test not vise versa 
