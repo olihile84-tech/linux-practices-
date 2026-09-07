@@ -1,4 +1,3 @@
-
 coding notes
 
 numpy np 
