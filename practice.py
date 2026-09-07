@@ -1,0 +1,3 @@
+coding notes
+
+numpy np 
