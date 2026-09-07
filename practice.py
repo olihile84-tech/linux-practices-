@@ -1,1 +1,5 @@
-numpy notes
+
+coding notes
+
+numpy np 
+
