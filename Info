@@ -1,0 +1,51 @@
+this are the things that you can copy to your exploration 
+
+things we covered
+
+ActionCommand
+Check repository statusgit status
+Stage changesgit add .
+Commit changesgit commit -m "message"
+Switch branchgit switch <branch-name>
+Create & switch branchgit checkout -b <new-branch-name>
+Merge branch into currentgit merge <branch-name>
+Push branch to GitHubgit push -u origin <branch-name>
+
+1. Authenticate GitHub CLI (gh) with Your Token
+​Instead of using a web browser, log in directly using your personal access token (PAT):
+
+gh auth login
+
+When prompted:
+Select GitHub.com.
+Select HTTPS (or SSH if configured).
+Select Paste an authentication token when asked how you want to authenticate.
+
+To connect your local Git repository to GitHub using gh auth login, open your PDF, and transfer files between your phone and computer, follow these simple steps:
+1. Authenticate GitHub CLI (gh) with Your Token
+Instead of using a web browser, log in directly using your personal access token (PAT):
+ * Run the login command:
+   gh auth login
+
+ * When prompted:
+   * Select GitHub.com.
+   * Select HTTPS (or SSH if configured).
+   * Select Paste an authentication token when asked how you want to authenticate.
+ * Paste your GitHub token into the terminal and press Enter.
+2. Opening PDF Files in Linux Terminal (xdg-open)
+To open files (like PDFs or images) from your Linux terminal using your system's default viewer, use xdg-open:
+xdg-open Linux_Git_Cheat_Sheet.pdf
+
+3. Transferring a PDF from Your Phone to Your Computer
+Choose the method that works best for your setup:
+ * USB Cable (MTP - Fast & Direct):
+   * Connect your phone to your Linux PC via USB.
+   * On your phone, tap the USB notification and select File Transfer / MTP.
+   * Open your file manager on Linux, navigate to your phone's storage, and copy the PDF into ~/Desktop/linux_practice.
+ * Local Network Transfer (KDE Connect / LocalSend):
+   * Install LocalSend or KDE Connect on both your phone and PC.
+   * Connect both devices to the same Wi-Fi network and send the file directly across devices.
+ * Cloud Storage (Google Drive / Email):
+   * Upload the PDF from your phone to Google Drive or send it via email/messaging.
+   * Open your web browser on Linux and download it directly into your project directory.
+
